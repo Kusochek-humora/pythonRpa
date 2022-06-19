@@ -1,7 +1,27 @@
+
+.style-2 {
+    .card {
+        padding-top: 100px;
+    }
+    .card-main {
+        &__item {
+            display: block;
+        }
+        &__picture {
+            margin-bottom: 60px;
+            max-width: 100%;
+        }
+        &__box {
+            margin-bottom: 100px;
+        }
+    }
+}
+
 .card {
     padding-top: 198px;
     padding-bottom: 100px;
 }
+
 .card__container {
 }
 .card-time {
@@ -130,6 +150,7 @@
         color: #161931;
     }
 }
+
 .card-main {
     &__socials {
         span {
@@ -173,9 +194,9 @@
         letter-spacing: 0.02em;
     }
     &__box {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
 
         margin-bottom: 60px;
     }

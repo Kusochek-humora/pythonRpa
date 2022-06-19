@@ -22,7 +22,7 @@
         align-items: center;
         gap: 0 24px;
 
-        margin-bottom: 84px;
+        // margin-bottom: 84px;
         &-item {
         }
         &-link {
@@ -55,7 +55,7 @@
             &:last-child {
                 margin-bottom: 0;
             }
-            margin-bottom: 35px;
+            margin-bottom: 28px;
         }
 
         &-link {
@@ -71,7 +71,7 @@
         font-size: 16px;
     }
     &__address {
-        margin-bottom: 60px;
+        margin-bottom: 48px;
     }
     &__contacts {
         &-text:first-of-type {
@@ -84,7 +84,7 @@
             line-height: 25px;
         }
         &-title {
-            margin-bottom: 30px;
+            margin-bottom: 19px;
         }
     }
     &__bottom {
