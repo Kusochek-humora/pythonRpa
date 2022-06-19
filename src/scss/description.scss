@@ -1,0 +1,121 @@
+.description {
+    &__container {
+    }
+    &-run {
+        height: 660px;
+        background-color: #092c42;
+        color: $white;
+        img {
+            height: 615px;
+        }
+        .description-item__box-picture {
+            margin-top: 45px;
+        }
+        .description-item__text {
+            margin-bottom: 0;
+        }
+        .description-item__title {
+            margin-bottom: 165px;
+        }
+    }
+    &-manage {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 100px 0;
+        .description-features__picture{
+            background: none;
+        }
+    }
+    &-build {
+        padding: 100px 0;
+        background-color: #f3f4f6;
+    }
+    &-item {
+        color: $black;
+    }
+    &-item__title {
+        font-weight: 700;
+        font-size: 32px;
+
+        margin-bottom: 30px;
+    }
+    &-item__text {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+
+        margin-bottom: 50px;
+    }
+    &-item__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:nth-child(even) {
+            margin-top: 60px;
+
+            flex-direction: row-reverse;
+        }
+    }
+    &-item__box-picture {
+        height: 430px;
+    }
+    &-item__box-image {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &-item__caption {
+        p {
+            max-width: 565px;
+            width: 100%;
+        }
+    }
+    &-item__subtext {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &-features {
+        margin-top: 70px;
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            order: 2;
+            text-align: center;
+        }
+        &__picture {
+            order: 1;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(237, 240, 244, 1);
+
+            position: relative;
+
+            margin-bottom: 30px;
+        }
+        &__image {
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            object-position: center;
+            height: 75px;
+        }
+    }
+    &__button {
+        margin: 90px auto 0;
+    }
+}
