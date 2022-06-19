@@ -1,11 +1,7 @@
-html {
-    box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html,
@@ -16,6 +12,7 @@ body {
 
 body {
     font-family: "SF-pro Display", sans-serif;
+    color: #092C42;
 }
 
 h1,
