@@ -432,3 +432,207 @@
         }
     }
 }
+
+.properties {
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+        gap: 30px;
+    }
+    &__item {
+        width: 100%;
+        &-image {
+            background-color: #F3F4F6;
+            border-radius: 8px;
+            height: 245px;
+            padding: 23px 0 22px;
+            & > img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        &-title {
+            padding: 0px 28px;
+            margin-top: 30px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+.support {
+    background-color: #5F7684;
+    padding: 100px 0;
+    &__title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.25;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 750px;
+        margin: 0 auto 60px;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+    &__item {
+        max-width: 402px;
+        width: 100%;
+        height: 118px;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__link {
+        display: block;
+        width: max-content;
+        margin: 60px auto 0;
+    }
+}
+
+
+.resources {
+    padding: 100px 0;
+    &__links {
+        display: flex;
+        gap: 87px;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    &__slider {
+        &-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            position: relative;
+            height: 80px;
+        }
+        .swiper-button-next, 
+        .swiper-button-prev {
+            position: static;
+            margin: 0;
+            width: 80px;
+            height: 80px;
+            background-color: #C1CAD1;
+            border-radius: 50%;
+            transition: all .3s ease;
+            &::after {
+                display: none;
+            }
+            svg path {
+                transition: all .3s ease;
+            }
+            &.swiper-button-disabled {
+                opacity: 1;
+                background-color: #F3F4F6;
+                svg path {
+                    fill: #979797;
+                }
+                &:hover {
+                    background-color: #F3F4F6;
+                }
+            }
+            &:hover {
+                background-color: #87A1B6;
+            }
+        }
+        .swiper-pagination{
+            position: static;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            max-width: max-content;
+            margin: 0 62px;
+            &-bullet {
+                width: 10px;
+                height: 10px;
+                margin: 0 !important;
+            }
+        }
+    }
+    &__slide {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.resource {
+    position: relative;
+    height: 256px;
+    padding: 30px;
+    &__background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(9, 44, 66, 0.8);
+        }
+
+    }
+    &__inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__title {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        & > span {
+            margin-top: 5px;
+            display: block;
+            font-size: 32px;
+            line-height: 35px;
+        }
+    }
+    &__btn {
+        margin-top: auto;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        width: max-content;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        padding: 12px 33px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 16px;
+        height: 56px;
+        color: #FFF;
+        transition: all .3s ease;
+        &:hover {
+            background-color: #0096ED;
+        }
+        &-icon {
+            & > svg {
+                display: block;
+            }
+        }
+    }
+}
