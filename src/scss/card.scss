@@ -1,0 +1,228 @@
+.card {
+    padding-top: 198px;
+    padding-bottom: 100px;
+}
+.card__container {
+}
+.card-time {
+    font-size: 18px;
+    // line-height: 21px;
+    letter-spacing: 0.02em;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.card-medium {
+    &__item {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        display: flex;
+    }
+    &__picture {
+        position: relative;
+        height: 260px;
+        border-radius: 3px;
+        color: $white;
+        max-width: 386px;
+        width: 100%;
+        margin-right: 30px;
+
+        span {
+            position: absolute;
+            z-index: 3;
+            bottom: 20px;
+            left: 20px;
+        }
+    }
+
+    &__image {
+        z-index: 1;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
+    &__caption {
+        max-width: 700px;
+        width: 100%;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+
+        margin-bottom: 39px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.card-little {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px 25px;
+    }
+    &__item {
+        max-width: 580px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        display: flex;
+    }
+    &__picture {
+        max-width: 180px;
+        height: 125px;
+        position: relative;
+
+        border-radius: 3px;
+        color: $white;
+
+        width: 100%;
+        margin-right: 30px;
+
+        .card-time {
+            position: absolute;
+            z-index: 3;
+            bottom: 15px;
+            left: 15px;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    }
+
+    &__image {
+        z-index: 1;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    &__caption {
+        width: 100%;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        /* or 120% */
+
+        letter-spacing: 0.02em;
+
+        margin-bottom: 14px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 19px;
+        /* or 127% */
+
+        letter-spacing: 0.02em;
+
+        color: #161931;
+    }
+}
+.card-main {
+    &__socials {
+        span {
+            display: block;
+            margin: 15px 0;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+
+            color: #161931;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            &:nth-child(2) {
+                margin: 0 25px 0 29px;
+            }
+            a {
+                display: block;
+            }
+        }
+    }
+    .content-text {
+        margin-bottom: 50px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__content-image {
+        object-fit: cover;
+        object-position: center;
+        height: 334px;
+        margin-bottom: 50px;
+    }
+    &__time {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 40px;
+        letter-spacing: 0.02em;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin-bottom: 60px;
+    }
+    &__item {
+        &:last-child {
+            margin-bottom: 0;
+        }
+        display: flex;
+    }
+    &__picture {
+        max-width: 490px;
+        height: 338px;
+
+        position: relative;
+
+        border-radius: 3px;
+        color: $white;
+
+        width: 100%;
+        margin-right: 30px;
+        &.big-417 {
+            max-width: 417px;
+        }
+    }
+
+    &__image {
+        z-index: 1;
+        // position: absolute;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    &__caption {
+        width: 100%;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        /* or 120% */
+
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
