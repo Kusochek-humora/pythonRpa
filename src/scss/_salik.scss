@@ -5,6 +5,19 @@
     width: 100%;
     color: #fff;
     z-index: 100;
+    &.header_black {
+        color: $black;
+        .header__contact {
+            border-color: $black;
+        }
+        .lang {
+            &__select {
+                &::after {
+                    background-image: url(../images/arrow-down-black.png);
+                }
+            }
+        }
+    }
     &__inner {
         height: 98px;
         display: flex;
@@ -35,6 +48,17 @@
         border: 1px solid #fff;
         border-radius: 5px;
         margin-right: 20px;
+    }
+    &__log-out {
+        width: 24px;
+        height: 24px;
+        & > img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
     }
 }
 
