@@ -6,6 +6,9 @@
         color: $black;
         height: 388px;
     }
+    &.white-bg {
+        background-color: #FFF;
+    }
     &__background {
         position: absolute;
         z-index: -1;
@@ -44,6 +47,9 @@
         font-size: 32px;
 
         margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-weight: 500;
     }
     &__text {
         font-weight: 500;
